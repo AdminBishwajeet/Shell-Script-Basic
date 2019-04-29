@@ -1,0 +1,32 @@
+#   -- root mode 
+
+$   --local user mode
+
+~   --home dir.of user
+
+/   --super user mode
+
+uname  use for see the operating systme installed in our pc
+
+uname -r used for see the version of OS.
+
+eject  for trey out
+
+eject -r close the trey
+
+history  To see the all privious command
+
+history -c to clear the history
+  
+
+reboot     |    
+reboot -f  |reboot the pc
+init6      |
+
+
+logout    |logout the pc
+exit      |
+
+
+poweroff   |
+init 0     |shutdown the pc
