@@ -1,0 +1,11 @@
+                    ---- Files and directory Permissions---
+
+ls use for see the files and dir.
+
+ls-a use for hidden files and dir.
+
+ll  use for same hidden files and dir.with permissions.
+
+ll -a |less use for see the files and dir permissions with page by page.
+
+
