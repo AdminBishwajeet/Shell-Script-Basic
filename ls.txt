@@ -1,0 +1,5 @@
+[admin@localhost ~]$ ls
+Desktop    Downloads  Music     Public     Videos
+Documents  karan      Pictures  Templates
+
+
