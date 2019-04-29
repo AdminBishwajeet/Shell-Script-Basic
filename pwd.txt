@@ -1,0 +1,2 @@
+[admin@localhost ~]$ pwd
+/home/admin
