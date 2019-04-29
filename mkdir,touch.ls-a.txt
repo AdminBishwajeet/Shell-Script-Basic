@@ -1,0 +1,12 @@
+
+=================
+[admin@localhost ~]$ mkdir karan
+mkdir: cannot create directory `karan': File exists
+=====================
+[admin@localhost ~]$ mkdir ram
+++++++++++++++++++++++++++++++
+[admin@localhost ~]$ touch rajan
+++++++++++++++++++++++++++++++++++++++++++++++++
+[admin@localhost ~]$ ls
+Desktop    Downloads  Music     Public  ram        Videos
+Documents  karan      Pictures  rajan   Templates
