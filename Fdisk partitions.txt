@@ -1,0 +1,27 @@
+#  fdisk  
+Used to remove and manage the partition size.
+
+#  fdisk -l
+Used to see the partition sizeof our device.
+
+Device Name :--
+
+Primary Partition are 2 types:--
+
+1> Primary parition
+
+2> Extnded patition
+
+/dev/sda is called primary partitions (SATA and ACASI)
+
+/dev/hda  is called iDE cable
+
+#  fdisk /dev/sda (device name)
+To inter in fdisk utility..
+
+m - for help
+n - to create a patition
+p -to see the partition table
+d -delete the partition
+q -quit without saving changes
+w -save and quit
