@@ -1,0 +1,71 @@
+   ------User and Group and Permissions------
+
+user id :--
+
+--0 t0 499 --for system users
+
+--500 to 60000 - for local users
+
+
+/root  for Root user
+
+/home  for local user
+
+default login shell for linux user..is
+/bin/bash 
+
+# useradd username
+or
+# adduser username
+to create a user
+
+#passwd usename 
+to set the password for user
+
+# getent passwd 
+to see the information about users
+
+# userdel username
+to remove any user
+
+#userdel -r username
+to remove user with its home directory
+
+# groupadd groupname
+to create a group
+
+# getent group
+to see all the information abt group
+
+# getent group groupname
+to see the information abt particular group
+
+# usemod -G groupnname username
+to add user in any group
+
+            -----Permisstions-----
+
+o -- parmission deny
+4 --read
+2 --write
+1 --excute
+7 --full permission
+
+# ll filename
+to see the permission of any file
+
+# chown username filename
+to change the ownership of any file
+
+# chgrp groupname filename
+to change the group ownership of any file
+
+# chmod u = ---,g = ---, 0 = ---, filename
+
+u--ownership permission
+g--group ownership permission
+o--otherpermission
+
+
+
+

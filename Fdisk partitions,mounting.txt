@@ -10,8 +10,17 @@ Used for format partition
 #mkdir /karan
 craete a directory
 
+# mount 
+To check the mount device with with permission
+
 # mount /dev/sda1 /karan
 TO mount that partition on karan (any) directory
+
+# umount /karan
+umount karan
+
+#umount /dev/sda1 /karan
+umount partition on karan directory
 
 #vi /dev/sda1
 

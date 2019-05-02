@@ -1,0 +1,67 @@
+          --------YUM client--------(yellow dog updater modifier)
+
+       It is used to resolve the dependencies of all the packages used in Linux OS.
+
+ Need:--Required rpm -Createrepo
+
+
+
+
+# cd /media/
+
+media#cat /etc/redhat-release 
+
+# ls
+
+now see the packages file here.
+
+# cd pakages/
+
+packages # ll
+
+to see a lot of packages here.
+
+# ll | wc -l
+
+to see the words count packages like- 3578packages
+
+#pwd
+ To see present working directory
+
+#cd..
+
+#ll
+to see the permission
+# media # cd
+here to see repodata 
+
+# cd repodata
+
+# repodata # 
+
+# rpm -ivh packageName with path
+
+# createrepo -v /dir.name /server
+to create the reposery between all the packages store in server dir.
+
+vi /etc/yum.repo.d /name.repo
+
+{comment}
+name =xyz
+baseurl =file:///dir.name/server
+gpgcheck = 0 
+:wq
+
+# yum clean all
+to clean all the temp.error generated in creating YUM.
+
+# yum install packages name
+to install any packages
+
+# yum list packages name
+to query any packages
+
+#yum remove packages name
+to remove packages
+
+ 
