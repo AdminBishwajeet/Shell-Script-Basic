@@ -1,0 +1,129 @@
+[admin@localhost ~]$ su
+Password: 
+
+[root@localhost admin]# ls
+
+Desktop    Downloads  Music     Public     Videos
+
+Documents  karan      Pictures  Templates
+
+
+[root@localhost admin]# rpm -qa | grep acl
+
+libacl-2.2.49-4.el6.x86_64
+acl-2.2.49-4.el6.x86_64
+
+[root@localhost admin]# cat /etc/group |grep group1
+[root@localhost admin]# cat /etc/group |grep Group1
+[root@localhost admin]# cat /etc/group | grep Group1
+[root@localhost admin]# gpasswd -M user1 user2 user3
+Usage: gpasswd [option] GROUP
+
+Options:
+  -a, --add USER                add USER to GROUP
+  -d, --delete USER             remove USER from GROUP
+  -r, --remove-password         remove the GROUP's password
+  -R, --restrict                restrict access to GROUP to its members
+  -M, --members USER,...        set the list of members of GROUP
+  -A, --administrators ADMIN,...
+                                set the list of administrators for GROUP
+Except for the -A and -M options, the options cannot be combined.
+
+[root@localhost admin]# gpasswd -M user1,user2,user3
+Usage: gpasswd [option] GROUP
+
+Options:
+  -a, --add USER                add USER to GROUP
+  -d, --delete USER             remove USER from GROUP
+  -r, --remove-password         remove the GROUP's password
+  -R, --restrict                restrict access to GROUP to its members
+  -M, --members USER,...        set the list of members of GROUP
+  -A, --administrators ADMIN,...
+                                set the list of administrators for GROUP
+Except for the -A and -M options, the options cannot be combined.
+
+gpasswd: group 'Group1' does not exist in /etc/group
+
+[root@localhost admin]# groupadd group1
+
+[root@localhost admin]# cat /etc/group | grep Group1
+
+[root@localhost admin]# cat /etc/group | grep group1
+group1:x:507:
+
+[root@localhost admin]# cat /etc/group | grep group1
+group1:x:507:
+
+[root@localhost admin]# gpasswd -M user1,user2 group1
+
+[root@localhost admin]# cat /etc/group | grep group1
+
+group1:x:507:user1,user2
+
+
+[root@localhost admin]# mkdir myacl
+
+[root@localhost admin]# cd myacl/
+
+[root@localhost myacl]# ls -l
+total 0
+[root@localhost myacl]# mkdir abc
+
+[root@localhost myacl]# ls -l
+total 4
+drwxr-xr-x. 2 root root 4096 May  3 11:39 abc
+
+[root@localhost myacl]# getfacl abc
+
+# file: abc
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+[root@localhost myacl]# setfacl -m u:user1:rwx abc
+
+[root@localhost myacl]# ls -l
+total 8
+
+drwxrwxr-x+ 2 root root 4096 May  3 11:39 abc
+
+[root@localhost myacl]# getfacl abc
+
+# file: abc
+# owner: root
+# group: root
+user::rwx
+user:user1:rwx
+group::r-x
+mask::rwx
+other::r-x
+
+[root@localhost myacl]# setfacl -m g:group1:rwx abc
+
+[root@localhost myacl]# getfacl abc
+
+# file: abc
+# owner: root
+# group: root
+user::rwx
+user:user1:rwx
+group::r-x
+group:group1:rwx
+mask::rwx
+other::r-x
+
+[root@localhost myacl]# setfacl -m o:rwx abc
+
+[root@localhost myacl]# getfacl abc
+
+# file: abc
+# owner: root
+# group: root
+user::rwx
+user:user1:rwx
+group::r-x
+group:group1:rwx
+mask::rwx
+other::rwx
