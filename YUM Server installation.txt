@@ -1,0 +1,54 @@
+   -------------YUM server--------------
+
+1) mount the CD or DVD 
+
+2) make a dir.on root
+
+3) Copy all packages on that root directory
+   (cp -vr /rhel6/* /rhel6)
+
+4) vi /etc/yum.conf  
+[main]
+cachedir=/var/cache/yum/$basearch/$releasever
+keepcache=0
+debuglevel=2
+logfile=/var/log/yum.log
+exactarch=1
+obsoletes=1
+gpgcheck=1
+plugins=1
+installonly_limit=3
+
+5) 2nd process for seperate file configurations
+
+#cd /etc/yum.repos.d/
+
+#yum.repos.d# vi rhel.repo
+{rhel}
+name=rhel6
+baseurl=file:///rhel6
+gpgcheck=0
+
+:wq! (use for save the editor file)
+
+6) how to create repository
+# createrepo 
+
+7) install createrepo file
+# rpm -ivh createrepo.9.o.8....rpm  (use tab for full path)
+
+8) if error for installation creterepo file than create createrepo file..
+# craeterepo --database /rhel6/Packages/
+
+9) According to redhat community some dependencies file resolved by this command..
+# yum install createrepo
+
+10) yum install httpd* 
+Install any packages
+
+11) yum install bind httpd vsftpd
+Install multiple packages at a time
+
+12) yum install bind 
+for remove any packages
+
