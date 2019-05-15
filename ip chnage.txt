@@ -1,0 +1,23 @@
+         (how to change ip address in virtual machine)
+
+
+# /etc/sysconfig/network-scripts
+
+# vi ifcfg-eth0
+
+DEVICE=eth0
+BOOTPROTO=STATIC
+IPADDR=192.168.0.5
+NETMASK=255.255.255.0
+GATEWAY=192.168.0.1
+ONBOOT=yes
+
+:wq! enter for save the editor
+
+# sudo /etc/init.d/network stop
+
+stop the services of network services
+
+# sudo /etc/init.d/network start
+
+start the services of network services
