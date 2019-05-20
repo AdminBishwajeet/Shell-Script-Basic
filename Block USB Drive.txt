@@ -1,0 +1,30 @@
+      -------Block or disable pen drive in rhel-6------
+
+1st -- Through Kernal
+2nd -- Black list
+
+#desktop# vi boot/grub/grub.conf
+edit here--
+
+KEYTABLE=us  nousb
+
+:wq! -      save file
+
+#desktop#  lsmod | grep usb_storage     ---------no usb installed in pc
+
+# lsmod | grep usb_storage    ----------after usb installation in pc
+usb_storage     39114  1
+
+# modprobe -r usb_storage   ------pendrive no dedection now
+for check--# lsmod | grep usb_storage
+
+# vi  /etc/mobprobe.d/ blacklist.conf    ----------
+edit anywhere--
+
+blacklist usb_storage
+
+:wq!  --save
+Now check pendrive dedection:--
+
+#desktop#  lsmod  |  grep usb_storage  ----------pendrive no dedection now
+   
