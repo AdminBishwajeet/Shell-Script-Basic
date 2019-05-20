@@ -1,0 +1,31 @@
+              -----------History commands tricks in RHEL-6---------
+
+# history   ---To see the old command records
+
+# exports HISTTIMEFORMAT='%F %T' ---show history date with time
+ex:---
+# ls
+#date
+#time
+#whoami
+
+# history  -- To see history date with time
+
+# export HISTIGNORE='pwd:ls -l:date'
+
+#pwd 
+#ls
+ Now check old history
+#history ====no recodas available in history commands--pwd,ls,date
+
+# exports HISTCONTROL=ignoredups -----No duplicate recors avai..
+
+# vi .bash_profile    ----parmanent Use/save.
+edit-
+press i for insert mode
+
+export HISTTIMEFORMAT='%F %T '
+
+:wq!---SAVE
+
+# unset export HISTCONTROL  --- used for not run the command
