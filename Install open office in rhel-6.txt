@@ -1,0 +1,36 @@
+-------------open office installation in RHEL-6------------------
+
+#desktop# cd /offoce/
+
+#office# ls
+open office_3.3.0_LINUX__install-rpm_en-us.tar
+
+#office# tar -xvf open\ office_.3.0_linux_x86_install-rpm_en-US.tar  ---office installation
+
+#office# cd 000330_m20_native_packed-1 en_US.9567/
+
+#000330_m20_native_packed-1 en_US.9567/# ls
+licence readmes RPMS update
+
+#000330_m20_native_packed-1 en_US.9567/# cd RPMS/
+
+#RPMS# ls
+show all office releted packages available here..
+
+# RPMS # rpm -ivh *.*   ---- install all packages at a time releted to office.
+48 apx. packages installed...
+
+#RPMS# ls | less  --- To see office file page by page
+
+# RPMS # cd desktop-intergration/
+
+#desktop-intergration# ls
+
+#desktop-intergration# rpm -ivh openoffice-org3.3-redhat-menus-3.prepairing...
+
+#to check the install open office 
+click application then office then openoffice.org 3.3
+
+
+
+#
