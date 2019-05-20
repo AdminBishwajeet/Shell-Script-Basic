@@ -1,0 +1,28 @@
+           -----------RPM-(Redhat packages manager)-----------
+
+# packages# ls ---To see the installed packages inside the rhel cd.
+
+# packages# ls | less -- to see the packages page bies...
+
+# packages# rpm -ivh createrepo-0.9.8-4.el6.noarch.rpm ----install packages
+
+# packages# rpm - U createrepo-0.9.8-4.el6.noarch.rpm   ----Upgrade any packages
+
+# packages# rpm -qa --------(query all)installed total rpm packages
+
+# packages# rpm -q zip(package name) ----query for particular package
+ex-zip-3.0-1.el6.i686
+
+# packages# rpm -qf zip ---To see the where is my package file
+
+# packages# rpm -qf zip ---To see all more files releted to zip package
+
+# packages# rpm -qi zip ---To query all information about zip package
+
+# packages# rpm -qd zip ---query abut documentaion file of zip
+
+# packages# rpm -ivh --nodeps tsclient-2.0.2.6.el6.i686.rpm ---direct install packge without dependencies error.
+
+# packages# rpm -e --nodeps tsclient  ----direct Remove/uninstall any packages
+
+  
