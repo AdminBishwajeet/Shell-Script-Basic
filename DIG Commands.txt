@@ -1,0 +1,28 @@
+                      ---------------------DIG Command in rhel-6-------------------------------
+
+#  dig  www.google.com      --------query about google.com   
+ex- A records, IP address, port no , name server, rime, date, msg....etc....
+
+# dig  -t  NS  www.google.com       -------show only NS records of google
+
+# dig  -t  MX  www.google.com    --------mx records only
+
+# dig  www.google.com  +nocomments +noauthority + noadditional +n0stats       ------ show only some info..no other information
+
+# dig  www.google.com  +noall   +answer           -------------------show some info.....--very short info.....
+
+# dig  -t  NS  www.google.com  +noall   +answer     ----------------show only NS records.....
+
+# dig www.google.com +short      ---------------only show ip address of google.com
+
+# dig  www.facebook.com    ------------
+
+# vi  int.txt               ----------------info.. about only these particuler sites...
+type :- 
+
+google.com
+facebook.com
+intcbt.com
+:wq!    = save
+
+# dig  -f  int.txt     -----------------To see all info.. about these 3 sites only...
