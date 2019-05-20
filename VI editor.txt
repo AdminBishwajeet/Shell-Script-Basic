@@ -1,0 +1,38 @@
+                   ----------VI editor----------
+
+# desktop# cat > hello.txt
+type-  this is text file
+ctrl + s for save the file
+
+#cat hello.txt   --to see the matter (this is text file)
+
+# vi  hello.txt
+type here- any matter
+press i for insert mode anf write anythig..
+like-
+this is text file again
+press for ascape outside..
+:wq! -- for save the editor
+
+press:- j for down
+k for up
+i for right side (Caps lock)
+h for move cursor
+Caps lock press G for last line
+2G for 2nd line
+h for 1st line
+m for middle line
+l for last line 
+
+dd for delete the line
+u for undo
+4dd for delete 4lines
+yy for copy the line/file
+p for paste
+
+:.!date  use for date command 
+:.!cal   use for calender
+:%s/su/sunday  ---repalce su into sunday full word
+:%s/Mo/monday/g ---- all change mo into monday
+
+:wq!   for save the editor...
