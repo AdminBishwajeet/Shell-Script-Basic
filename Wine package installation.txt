@@ -1,0 +1,24 @@
+           --------------software installations in RHEL-6---------
+Through wine , we can install all exe file setup..
+
+#desktop# cd /media
+
+#media# ls
+21003150804 DTPCD
+
+#media# cd 21003150804/
+
+#21003150804# ls
+Linux Data
+
+#21003150804# cd Linux\ Data/
+
+#Linux Data#ls
+installed packages...
+
+#Linux Data# rpm -ivh wine-1.1.3-1mdv2008.1.i586.rpm
+
+check wine package--go to application then wine then program manager..
+
+Go to file the excute then brouse the exe file from pc like vlc or adobe
+now installation doen easy through Wine..
