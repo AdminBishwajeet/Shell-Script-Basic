@@ -1,0 +1,31 @@
+           ----------------gzip,gzip2 compress file in rhel-6-----------------
+
+#desktop# make a file like - test.txt
+
+#desktop# du test.txt ---see te file size
+8     test.txt
+
+#ls -l test.txt  ----see the file size with permission
+-rw-r--r--. 1 root root 8147 mar 2 18:28 test.txt
+
+# gzip test.txt   -----for compress the file
+
+# ls -l  -----see the zip format size with permission
+like -- test.txt.gz
+size is 187=compress size
+
+# gunzip test.txt.gz  -----userd for unzip the file
+
+# ls -l  --- for check the size again 
+size -- 8147 
+
+# bzip2 test.txt   ----2nd way for compress  
+
+# bun?zip2 test.txt.bz2  ---for uncompress
+
+# ls -l ----check the uncompressed size
+size-- 8147
+
+
+ 
+
