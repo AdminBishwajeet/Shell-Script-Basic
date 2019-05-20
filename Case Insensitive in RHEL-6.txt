@@ -1,0 +1,18 @@
+            ------------------------------Case Insensitive in RHEL-6-----------------------------
+
+#desktop#  mkdir seema
+
+# mkdir Seemyphoto
+
+ # bind "set completion-ignore-case on"        -------remove case insensitive now
+(for temporary ignore only)
+
+# cd seema
+seema/     Seemyphoto/
+
+# vi  .bash_profile          ------------for parmanent save/mount
+edit here:--
+
+bind "set completion-ignore-case on"
+
+:wq!  ------save file
