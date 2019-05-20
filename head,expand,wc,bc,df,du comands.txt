@@ -1,0 +1,49 @@
+                                       -----------------head,expand,wc,bc,df,du comands in rhel-6--------------------
+
+# head  test.txt     ------------ only 10 lines show indise of this text file
+
+# head -n  3  test.txt   -------show 3 lines
+
+# tail test.txt    -------only show 10 lines from the last line
+
+# vi  test.txt
+press i 
+edit
+one        name       mobileno     address  
+:wq! --save
+unable ro write anything between gap/space/tab....
+
+# expand  test.txt  > test2.txt   
+
+# vi test2.txt    --------now we can writ anything between space.....
+
+# wc test.txt   ------------see the words count of this file
+ex- 20(lines)   25(words)  148(character)   test.txt
+
+#wc  -w  test.txt   ------see only word count inside of this text file
+
+#  bc     -----basic calculation
+ex- 10+45+78+78+45
+166
+
+# eject  -t   -----trey open
+
+# df   ----show the patition size
+
+#df -f   ----show the size in MB or GB
+
+# du  test.txt  -----see the particular file size
+ex- 4    test.txt
+
+# du var   -----see all size of this directory
+
+# du -s var --------------see total size
+
+# free  -m  -----------memory check in mb
+
+#  free  -k  -----------memory check in kb
+
+# free  -g  -----------memory check in gb
+
+# cat  /etc/mtab     --------------show the temp..mounted all device
+ 
