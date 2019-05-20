@@ -1,0 +1,53 @@
+    --------SSH--(Secure Shell)--------
+
+check ip of both computer and ping both of each other pc..
+
+#desktop# ssh root@192.168.10.3
+password - abc@123
+
+#  mkdir abc
+# mkdir karan
+
+exit 
+Now work on server machines:------------------
+
+#desktop# vi /etc/ssh/sshd_config
+press i for insert mode
+edit here..
+port  22
+change 2222 (unable to access)
+
+#ListenAddress 192.168.20.10 (access only this pc)
+#LogLevel INFO
+AllowUsers saroha
+
+ edit-permitRootLogin yes
+ permitRootLogin no
+
+:wq! --save
+
+# service sshd restart
+
+Now check On client machine----------------------
+
+#desktop# ssh root#192.168.20.10
+password abc@123
+permission denied no login 
+
+
+Now check on server machine -----------
+
+#desktop# cat /etc/passwd   --- for check saroha user is available or not
+
+Now check on client machine -----------
+
+#desktop# ssh root#192.168.20.10
+password abc@123
+
+if use of ssh port no ----
+
+#desktop# ssh root#192.168.20.10 -p 22
+password abc@123
+
+
+
