@@ -1,0 +1,22 @@
+                      -----------Crete Partition in Linux-rhel-6--------------
+
+# fdisk -l  ---To see the all partition device/list
+ex- /dev/sda1
+    /dev/sdb2
+
+# fdisk /dev/sdb   
+press - m for help
+n for crete new device  
+press 1
+enter
++100M
+press p for see the crete partition
+ex-/dev/sdb1   
+press q for without saveing 
+press w for saving the partitions
+
+# partprobe ---disk syncronize immedtly and aprtition update(no need to restart the pc)
+
+
+
+
