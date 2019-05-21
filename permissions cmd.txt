@@ -1,0 +1,29 @@
+                  --------------------Permissions--------------------------
+
+Represent  files  colors :--
+
+Blue color   -- For  Directory
+
+Black color -- For  Standard files
+
+Red  ---  Compressed files
+
+Green  -- scripts file or excutable files
+
+# ls -l  
+
+-rw-r--r--    1 root  root     0 jun  23 20:32  1.txt
+
+Total bits  = 10  bits
+
+1   bit  --  file type
+
+2 3 4  --  bits owner permissions
+
+5 6 7 --  bits group permissions 
+
+8 9 10 --  bits other/everyone permissions
+
+r  --    read    -----4
+w--   write   ----2
+x--    excute ----1
