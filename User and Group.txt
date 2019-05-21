@@ -1,0 +1,77 @@
+                                     --------------------Create User  and Group-------------------
+
+ ( /home  = user home directory) 
+( cat  /etc/shadow  =  All users passwd here in encrypted)
+( cat   /etc/passwd  =  all user  information  availble  here)
+
+
+# useradd  sonu
+# useradd  om
+# passwd sonu 
+passwd reset both accounts..
+
+# cd  /home
+#home#  ls
+sonu  om  
+
+# home # useradd  -s  /sbin/nologin  pawan   ----pawan is unable to login..
+open new terminal for check to use of pawan user....
+
+# home # su  - pawan 
+error is - this account in not available.
+
+# home # su  -  om
+login available...
+
+# home # usermod  -s  /sbin/nologin  om
+
+# home # su  - om 
+error is - this account in not available.
+
+# home # mkdir  /pnpuser
+
+# home # useradd  -d  /pnpuser/  newuser  ---newuser data store in pnpuser dir.
+
+# home # cat      /etc/passwd     --- all user  information  availble  here
+
+# home #  cat  /etc/shadow  ------- All users passwd here in encrypted 
+
+# home #  cat /etc/group    ----- group information here.
+
+# home # cat  /etc/gshadow    -----for group passwd data base
+
+# home #  userdel   pawan     ---- for delete user but not delete  from user database..
+  for check -- #cat /etc/passwd 
+pawan is not available here..
+
+#  home #  userdel  -r  om   ----- user account delete completly from his database
+for check:--
+# home # cd  /home
+# home # ls
+user   int    lost+found   pawan   sonu   test  (but not om)
+
+# home # groupass sales       -----create group
+
+# home # groupmod  -n    hr  sales   ------ rename group name  (sales to hr)
+
+# home # groupdel  hr   --- delete group 
+
+#root#desktop# system-config-users        ----To see how many users available
+
+# passwd  sonu    ---passwd reset of any user
+abc@123
+successfully reset
+
+# su -  sonu        ------------Go to swich user
+
+#root#desktop#  passwd     ------change for root passwd
+
+# whoami       -----name of the current login 
+
+# id   ---------   To  see uid or gid of any user (above 500)
+
+#  who  --------------To see curently login
+
+# w   -----------To see current login and more informations..
+
+# last   ------  To see  Login and logout/downtime all history 
